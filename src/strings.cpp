@@ -1,7 +1,7 @@
 #include "strings.hpp"
 
 #include <fstream>
-#include <stringstream>
+#include <sstream>
 
 namespace soda {
 
