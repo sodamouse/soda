@@ -8,4 +8,3 @@ set(SOURCE_FILES
 )
 
 add_library(soda ${SOURCE_FILES})
-
