@@ -7,11 +7,11 @@ namespace soda {
 
 std::string quotify(const std::string& str)
 {
-  std::string result = "\"";
-  result += str;
-  result += "\"";
+    std::string result = "\"";
+    result += str;
+    result += "\"";
 
-  return result;
+    return result;
 }
 
 std::string read_all(const std::string& filePath)
@@ -25,22 +25,22 @@ std::string read_all(const std::string& filePath)
 
 std::vector<std::string> split_string(const std::string& str, char delim)
 {
-  unsigned long p = 0;
-  unsigned long c = 0;
+    unsigned long p = 0;
+    unsigned long c = 0;
 
-  std::vector<std::string> result;
+    std::vector<std::string> result;
 
-  c = str.find(delim);
-  while (c != std::string::npos)
-  {
-    c = str.find(delim, p);
-    auto sub = str.substr(p, c - p);
-    result.push_back(sub);
+    c = str.find(delim);
+    while (c != std::string::npos)
+    {
+        c = str.find(delim, p);
+        auto sub = str.substr(p, c - p);
+        result.push_back(sub);
 
-    p = c + 1;
-  }
+        p = c + 1;
+    }
 
-  return result;
+    return result;
 }
 
-}
+} // namespace soda
