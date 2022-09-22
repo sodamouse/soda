@@ -25,8 +25,8 @@ std::string read_all(const std::string& filePath)
 
 std::vector<std::string> split_string(const std::string& str, char delim)
 {
-    unsigned long p = 0;
-    unsigned long c = 0;
+    int p = 0;
+    int c = 0;
 
     std::vector<std::string> result;
 
